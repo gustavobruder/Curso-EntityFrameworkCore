@@ -9,7 +9,14 @@ namespace CursoEFCore.Aulas.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("connection-string-fake");
+            const string server = "localhost";
+            const string port = "1433";
+            const string user = "SA";
+            const string password = "Curso#Entity";
+            const string database = "CursoEFCore";
+            var connectionString = $"Server={server}, {port};Initial Catalog={database};User ID={user};Password={password}";
+
+            optionsBuilder.UseSqlServer(connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

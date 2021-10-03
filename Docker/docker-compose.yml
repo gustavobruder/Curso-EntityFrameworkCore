@@ -1,0 +1,12 @@
+version: '2'
+services:
+  sql_server:
+    image: "mcr.microsoft.com/mssql/server"
+    hostname: sqlserver
+    environment:
+      SA_PASSWORD: "Curso#Entity"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - C:\dados\sqlserver:/var/opt/mssql/data

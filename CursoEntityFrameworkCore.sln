@@ -4,6 +4,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introducao", "Introducao", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoEFCore.Aulas", "Introducao\CursoEFCore.Aulas\CursoEFCore.Aulas.csproj", "{5D1B3480-F480-4038-8835-BFDCCE9E9BFD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{EBA58BD2-5100-45FF-A247-3CF3492A1B7D}"
+ProjectSection(SolutionItems) = preProject
+	Docker\docker-compose.yml = Docker\docker-compose.yml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
