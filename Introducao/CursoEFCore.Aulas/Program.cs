@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using CursoEFCore.Aulas.Data;
+using CursoEFCore.Aulas.Operacoes;
 using Microsoft.EntityFrameworkCore;
 
 namespace CursoEFCore.Aulas
@@ -27,6 +28,13 @@ namespace CursoEFCore.Aulas
             else
             {
                 Console.WriteLine("Application starting up...");
+
+                Inserir.Executar();
+                InserirVarios.Executar();
+                Consultar.Executar();
+                Atualizar.Executar();
+                Remover.Executar();
+                CarregamentoAdiantado.Executar();
             }
         }
     }
