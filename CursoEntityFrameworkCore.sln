@@ -9,6 +9,10 @@ ProjectSection(SolutionItems) = preProject
 	Docker\docker-compose.yml = Docker\docker-compose.yml
 EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominando", "Dominando", "{8622846C-50C7-41FB-9C38-A0DFF50E484A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoEFCore.Aulas", "Dominando\CursoEFCore.Aulas\CursoEFCore.Aulas.csproj", "{49C5C487-0B61-4CDC-835D-E84B7F23D3CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,8 +23,13 @@ Global
 		{5D1B3480-F480-4038-8835-BFDCCE9E9BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D1B3480-F480-4038-8835-BFDCCE9E9BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D1B3480-F480-4038-8835-BFDCCE9E9BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C5C487-0B61-4CDC-835D-E84B7F23D3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C5C487-0B61-4CDC-835D-E84B7F23D3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C5C487-0B61-4CDC-835D-E84B7F23D3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C5C487-0B61-4CDC-835D-E84B7F23D3CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5D1B3480-F480-4038-8835-BFDCCE9E9BFD} = {7337BF45-ADD4-43F2-A5A4-8BAF3A1D9422}
+		{49C5C487-0B61-4CDC-835D-E84B7F23D3CA} = {8622846C-50C7-41FB-9C38-A0DFF50E484A}
 	EndGlobalSection
 EndGlobal
