@@ -26,7 +26,14 @@ namespace CursoEFCore.Aulas.Data
             optionsBuilder
                 .UseLoggerFactory(_logger)
                 .EnableSensitiveDataLogging() // exibir os valores dos parametros gerados em querys (conteudo sensivel)
-                .UseSqlServer(connectionString);
+                .UseSqlServer(
+                    connectionString,
+                    serverBuilder => serverBuilder.EnableRetryOnFailure(
+                        maxRetryCount: 2,
+                        maxRetryDelay: TimeSpan.FromSeconds(5),
+                        errorNumbersToAdd: null
+                    ).MigrationsHistoryTable("_migrations_history")
+                );
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
