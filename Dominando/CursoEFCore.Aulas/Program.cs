@@ -1,6 +1,7 @@
 ﻿using System;
 using CursoEFCore.Aulas.Aulas;
 using CursoEFCore.Aulas.Data;
+using CursoEFCore.Aulas.TiposCarregamento;
 
 namespace CursoEFCore.Aulas
 {
@@ -13,12 +14,19 @@ namespace CursoEFCore.Aulas
             using var db = new ApplicationContext();
 
             /* Aulas */
+
+            Console.WriteLine("Aulas sobre 'Database' e 'Conexões'");
             // Ensure.EnsureDeleted();
             // Ensure.EnsureCreated();
             // HealthCheck.DatabaseHealthCheck();
             // GerenciarConexao.Gerenciar();
             // ExecuteSql.ExecutarComando();
             // ExecuteSql.SqlInjection();
+
+            Console.WriteLine("Aulas sobre 'Tipos de Carregamento'");
+            // Eager.Executar();
+            // Explicitly.Executar();
+            // LazyLoad.Executar();
         }
     }
 }

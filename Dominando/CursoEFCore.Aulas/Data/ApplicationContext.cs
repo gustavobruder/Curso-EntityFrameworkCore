@@ -22,7 +22,9 @@ namespace CursoEFCore.Aulas.Data
             optionsBuilder
                 .UseSqlServer(connectionString)
                 .EnableSensitiveDataLogging()
-                .LogTo(Console.WriteLine, LogLevel.Information);
+                .LogTo(Console.WriteLine, LogLevel.Information)
+                // .UseLazyLoadingProxies() // habilitar carregamento lento (lazy)
+                ;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
