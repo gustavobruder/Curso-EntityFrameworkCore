@@ -3,9 +3,9 @@ using System.Linq;
 using CursoEFCore.Aulas.Data;
 using CursoEFCore.Aulas.Domain;
 
-namespace CursoEFCore.Aulas.TiposCarregamento
+namespace CursoEFCore.Aulas.Common
 {
-    public class SetupLoader
+    public class SetupHelper
     {
         protected static void InserirDados(ApplicationContext db)
         {
@@ -14,6 +14,7 @@ namespace CursoEFCore.Aulas.TiposCarregamento
                 db.Departamentos.AddRange(
                     new Departamento
                     {
+                        Ativo = true,
                         Descricao = "Departamento 01",
                         Funcionarios = new List<Funcionario>
                         {
@@ -23,9 +24,11 @@ namespace CursoEFCore.Aulas.TiposCarregamento
                                 CPF = "11111111111",
                             },
                         },
+                        Excluido = true,
                     },
                     new Departamento
                     {
+                        Ativo = true,
                         Descricao = "Departamento 02",
                         Funcionarios = new List<Funcionario>
                         {

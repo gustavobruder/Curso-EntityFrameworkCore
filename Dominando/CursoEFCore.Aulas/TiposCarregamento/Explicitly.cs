@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Linq;
+using CursoEFCore.Aulas.Common;
 using CursoEFCore.Aulas.Data;
 
 namespace CursoEFCore.Aulas.TiposCarregamento
 {
-    public class Explicitly : SetupLoader
+    public class Explicitly : SetupHelper
     {
         public static void Executar()
         {

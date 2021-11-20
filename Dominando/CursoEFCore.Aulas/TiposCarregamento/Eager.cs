@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Linq;
+using CursoEFCore.Aulas.Common;
 using CursoEFCore.Aulas.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace CursoEFCore.Aulas.TiposCarregamento
 {
-    public class Eager : SetupLoader
+    public class Eager : SetupHelper
     {
         public static void Executar()
         {
