@@ -30,6 +30,9 @@ namespace CursoEFCore.Aulas.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationContext).Assembly);
+
+            // Filtro global de consulta
+            // modelBuilder.Entity<Departamento>().HasQueryFilter(d => !d.Excluido);
         }
     }
 }

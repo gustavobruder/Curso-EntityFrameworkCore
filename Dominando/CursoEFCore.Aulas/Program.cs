@@ -1,5 +1,6 @@
 ﻿using System;
 using CursoEFCore.Aulas.Aulas;
+using CursoEFCore.Aulas.Consultas;
 using CursoEFCore.Aulas.Data;
 using CursoEFCore.Aulas.TiposCarregamento;
 
@@ -27,6 +28,15 @@ namespace CursoEFCore.Aulas
             // Eager.Executar();
             // Explicitly.Executar();
             // LazyLoad.Executar();
+
+            Console.WriteLine("Aulas sobre 'Consultas'");
+            // FiltroGlobal.Configurar();
+            // FiltroGlobal.Ignorar();
+            // Projecao.Projetar();
+            // Parametrizadas.Consultar();
+            // Interpoladas.Consultar();
+            // Tags.Consultar();
+            // SplitQuery.Consultar();
         }
     }
 }
