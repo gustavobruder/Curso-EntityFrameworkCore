@@ -19,6 +19,22 @@ namespace CursoEFCore.Aulas.Data.Configurations
                 .HasMany(d => d.Funcionarios)
                 .WithOne(f => f.Departamento)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            // Aula sobre indices
+            /*
+            builder
+                .HasIndex(d => d.Descricao)
+                .HasDatabaseName("ix_indice_simples")
+                .IsUnique();
+            */
+
+            // Aula sobre indices
+            builder
+                .HasIndex(d => new {d.Descricao, d.Ativo})
+                .HasDatabaseName("ix_indice_composto")
+                .HasFilter("descricao IS NOT NULL")
+                .HasFillFactor(80)
+                .IsUnique();
         }
     }
 }
