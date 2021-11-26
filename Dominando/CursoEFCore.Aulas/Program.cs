@@ -2,6 +2,7 @@
 using CursoEFCore.Aulas.Aulas;
 using CursoEFCore.Aulas.Consultas;
 using CursoEFCore.Aulas.Data;
+using CursoEFCore.Aulas.ModeloDados;
 using CursoEFCore.Aulas.TiposCarregamento;
 
 namespace CursoEFCore.Aulas
@@ -37,6 +38,14 @@ namespace CursoEFCore.Aulas
             // Interpoladas.Consultar();
             // Tags.Consultar();
             // SplitQuery.Consultar();
+
+            Console.WriteLine("Aulas sobre 'Modelos de Dados'");
+            // Collations.Executar();
+            // Sequences.Executar();
+            // PropagacaoDados.Executar();
+            // ShadowProperties.Executar();
+            // OwnedTypes.Executar();
+            // RelacionamentoOneToOne.Executar();
         }
     }
 }

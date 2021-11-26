@@ -1,4 +1,5 @@
-﻿using CursoEFCore.Aulas.Domain;
+﻿using System;
+using CursoEFCore.Aulas.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -35,6 +36,9 @@ namespace CursoEFCore.Aulas.Data.Configurations
                 .HasFilter("descricao IS NOT NULL")
                 .HasFillFactor(80)
                 .IsUnique();
+
+            // Aula sobre 'Shadow Properties'
+            builder.Property<DateTime>("ultima_atualizacao");
         }
     }
 }
