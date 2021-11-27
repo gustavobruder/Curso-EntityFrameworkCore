@@ -3,6 +3,7 @@ using CursoEFCore.Aulas.Aulas;
 using CursoEFCore.Aulas.Consultas;
 using CursoEFCore.Aulas.Data;
 using CursoEFCore.Aulas.ModeloDados;
+using CursoEFCore.Aulas.Relacionamentos;
 using CursoEFCore.Aulas.TiposCarregamento;
 
 namespace CursoEFCore.Aulas
@@ -45,7 +46,10 @@ namespace CursoEFCore.Aulas
             // PropagacaoDados.Executar();
             // ShadowProperties.Executar();
             // OwnedTypes.Executar();
-            // RelacionamentoOneToOne.Executar();
+
+            Console.WriteLine("Aulas sobre 'Relacionamentos'");
+            // OneToOne.Executar();
+            OneToMany.Executar();
         }
     }
 }
