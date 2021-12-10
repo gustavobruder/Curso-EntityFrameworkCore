@@ -49,7 +49,8 @@ namespace CursoEFCore.Aulas
 
             Console.WriteLine("Aulas sobre 'Relacionamentos'");
             // OneToOne.Executar();
-            OneToMany.Executar();
+            // OneToMany.Executar();
+            ManyToMany.Executar();
         }
     }
 }
