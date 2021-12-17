@@ -50,7 +50,11 @@ namespace CursoEFCore.Aulas
             Console.WriteLine("Aulas sobre 'Relacionamentos'");
             // OneToOne.Executar();
             // OneToMany.Executar();
-            ManyToMany.Executar();
+            // ManyToMany.Executar();
+
+            Console.WriteLine("Aulas sobre 'Modelos TPH e TPT'");
+            ModeloTPH.Executar();
+            // ModeloTPH.Executar();
         }
     }
 }
