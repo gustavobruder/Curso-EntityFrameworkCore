@@ -46,6 +46,7 @@ namespace CursoEFCore.Aulas
             // PropagacaoDados.Executar();
             // ShadowProperties.Executar();
             // OwnedTypes.Executar();
+            PropertiesBag.Executar();
 
             Console.WriteLine("Aulas sobre 'Relacionamentos'");
             // OneToOne.Executar();
@@ -53,8 +54,8 @@ namespace CursoEFCore.Aulas
             // ManyToMany.Executar();
 
             Console.WriteLine("Aulas sobre 'Modelos TPH e TPT'");
-            ModeloTPH.Executar();
             // ModeloTPH.Executar();
+            // ModeloTPT.Executar();
         }
     }
 }

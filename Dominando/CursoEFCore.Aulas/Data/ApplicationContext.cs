@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CursoEFCore.Aulas.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -20,6 +21,8 @@ namespace CursoEFCore.Aulas.Data
         public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Instrutor> Instrutores { get; set; }
         public DbSet<Aluno> Alunos { get; set; }
+
+        public DbSet<Dictionary<string, object>> Configuracoes => Set<Dictionary<string, object>>("configuracoes");
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -64,6 +67,21 @@ namespace CursoEFCore.Aulas.Data
                 ;
 
             modelBuilder.Entity<Departamento>().Property(d => d.Id).HasDefaultValueSql("NEXT VALUE FOR sequencias.MinhaSequencia");
+
+            modelBuilder.SharedTypeEntity<Dictionary<string, object>>("configuracoes", builder =>
+            {
+                builder.Property<int>("id");
+
+                builder
+                    .Property<string>("chave")
+                    .HasColumnType("VARCHAR(40)")
+                    .IsRequired();
+
+                builder
+                    .Property<string>("valor")
+                    .HasColumnType("VARCHAR(255)")
+                    .IsRequired();
+            });
         }
     }
 }
