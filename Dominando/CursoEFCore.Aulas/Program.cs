@@ -5,6 +5,7 @@ using CursoEFCore.Aulas.Data;
 using CursoEFCore.Aulas.ModeloDados;
 using CursoEFCore.Aulas.Relacionamentos;
 using CursoEFCore.Aulas.TiposCarregamento;
+using CursoEFCore.Aulas.Transacoes;
 
 namespace CursoEFCore.Aulas
 {
@@ -46,7 +47,7 @@ namespace CursoEFCore.Aulas
             // PropagacaoDados.Executar();
             // ShadowProperties.Executar();
             // OwnedTypes.Executar();
-            PropertiesBag.Executar();
+            // PropertiesBag.Executar();
 
             Console.WriteLine("Aulas sobre 'Relacionamentos'");
             // OneToOne.Executar();
@@ -56,6 +57,10 @@ namespace CursoEFCore.Aulas
             Console.WriteLine("Aulas sobre 'Modelos TPH e TPT'");
             // ModeloTPH.Executar();
             // ModeloTPT.Executar();
+
+            Console.WriteLine("Aulas sobre 'Transações'");
+            TransacaoManual.Executar();
+            TransacaoRollback.Executar();
         }
     }
 }

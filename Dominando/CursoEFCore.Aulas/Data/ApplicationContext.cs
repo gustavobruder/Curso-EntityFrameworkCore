@@ -22,6 +22,8 @@ namespace CursoEFCore.Aulas.Data
         public DbSet<Instrutor> Instrutores { get; set; }
         public DbSet<Aluno> Alunos { get; set; }
 
+        public DbSet<Livro> Livros { get; set; }
+
         public DbSet<Dictionary<string, object>> Configuracoes => Set<Dictionary<string, object>>("configuracoes");
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
